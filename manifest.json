@@ -1,0 +1,35 @@
+﻿{
+
+  "manifest_version": 2,
+  "name": "PriceChecker",
+  "version": "1.0",
+
+  "description": "Adds a browser action icon to the toolbar. Click the button to choose a beast. The active tab's body content is then replaced with a picture of the chosen beast. See https://developer.mozilla.org/en-US/Add-ons/WebExtensions/Examples#beastify",
+  "icons": {
+    "48": "icons/w-48.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon":
+    {
+      "16": "icons/w-16.png",
+      "32": "icons/w-32.png",
+      "48": "icons/w-48.png",
+      "96": "icons/w-96.png"
+    },
+    "default_title": "PriceChecker",
+    "default_popup": "popup/menuScript.html"
+  },
+
+  "background": {
+	"scripts": ["dataBase.js"]
+	}
+
+
+}
+
+
